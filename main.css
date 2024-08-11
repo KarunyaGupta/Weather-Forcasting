@@ -14,6 +14,7 @@ body {
 .app-wrap {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   min-height: 100vh;
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3));
 }
@@ -31,11 +32,11 @@ header input {
   padding: 10px 15px;
   border: none;
   outline: none;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(215, 206, 206, 0.3);
   border-radius: 0px 16px 0px 16px;
-  border-bottom: 3px solid gray;
+  border-bottom:3px solid gray;
 
-  color: #313131;
+  color: wit;
   font-size: 20px;
   font-weight: 300;
   transition: 0.2s ease-out;
@@ -43,6 +44,9 @@ header input {
 
 header input:focus {
   background-color: rgba(255, 255, 255, 0.6);
+}
+header input::placeholder{
+  color:#fff;
 }
 
 main {
